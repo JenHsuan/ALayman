@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="views/profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="background-white">
+        <div id="float-navbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="float-navbar-item" href="">Profile</a>
+                </li>
+                <br>
+                <li>
+                    <a class="float-navbar-item" href="">Projects</a>
+                </li>
+                <br>
+                <li>
+                    <a class="float-navbar-item" href="">Abilities</a>
+                </li>
+                <br>
+                <li>
+                    <a class="float-navbar-item" href="">Experiences</a>
+                </li>
+                <br>
+                <li>
+                    <a class="float-navbar-item" href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="profile" class="container">
+           <div id="profile-title" >
+                <h2>Profile</h2>
+                <br>
+                <p id="profile-subtitle">I'm a productive JavaScript engineer</p>
+            </div>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="profile-container">
+                        <h3>About me</h3>
+                        <p>
+                            I am a senior web devloper with front-end JavaScript framework's expiriences like React.js, Knockout.js and server-side languages like NodeJS and ASP.NET MVC. 
+                            I love going deeply for solving issues.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                   <div id="personal-image-container">
+                       <img id="personal-image" src="views/images/JenHsuan.png" alt="Jen-Hsuan Hsieh">
+                   </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="profile-container">
+                        <h3>Details</h3>
+                        <strong>Name:</strong>
+                        <p>Jen-Hsuan Hsieh (Sean)</p>
+                        <strong>Age:</strong>
+                        <p>32</p>
+                        <strong>Location:</strong>
+                        <p>Taipei, Taiwan</p>
+                        <div class="btn-o" id="follow-button">
+                            <a id="follow-button-text" href="https://medium.com/a-layman">
+                            <img id="follow-button-image" src="views/images/medium-icon.png" alt="">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <nav id="common-footer" class="navbar navbar-dark navbar-fixed-bottom" >
+        <div class="row common-footer-row">
+            <div id="footer-follow" class="col-md-4">
+                <p id="footer-follow-text">Follow me</p>
+                <span class="footer-btn btn-o">
+                    <a href="https://twitter.com/JenHsuanHsieh">
+                        <img class="footer-icon" src="views/images/twitter.png" alt="">
+                    </a>
+                </span>
+                <span class="footer-btn btn-o">
+                    <a href="https://www.instagram.com/seanhsgogo/">
+                        <img class="footer-icon" src="views/images/instagram.png" alt="">
+                    </a>
+                </span>
+                <span class="footer-btn btn-o">
+                    <a href="https://www.facebook.com/jenhsuanh">
+                        <img class="footer-icon" src="views/images/facebook.png" alt="">
+                    </a>
+                </span>
+                <span class="footer-btn btn-o">
+                    <a href="https://medium.com/a-layman">
+                        <img class="footer-icon" src="views/images/medium-icon.png" alt="">
+                    </a>
+                </span>
+                
+            </div>
+            <div id="footer-copy-right" class="col-md-4">
+                <br>
+                <p>@2020 Jen-Hsuan Hsieh. All right reserved.</p>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
