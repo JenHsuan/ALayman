@@ -1,131 +1,14 @@
-h2 {
-    font-size: 70px;
-    color: #4A90E2;
-    font-weight: 300;
+.profile-container {
+    min-width:220px; 
 }
 
-h3 {
+.profile-container h3 {
     font-size: 32px;
     color: #4A90E2;
     font-weight: 100;
 }
 
-#float-navbar {
-    background-color: black;
-    z-index: 1; 
-    position: absolute;
-    left: 85%;
-    top: 30%;
-    border-radius: 5px;
-}
-
-.float-navbar-item {
-    color: white;
-    width: 150px;
-    text-align: center;
-    font-weight: 400;
-} 
-
-.page-title {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    text-align:center;
-    min-width:220px; 
-}
-
-.page-subtitle {
-    font-size: 18px;
-    font-weight: 300;
-}
-
-#profile {
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.profile-container-col {
-    text-align:center;
-    position: relative;
-}
-
-.profile-container {
-    min-width:220px; 
-}
-
 #personal-image {
     width:200px; 
     height:200px;
-    margin-left: 30px;
-}
-
-#follow-button {
-    width:90px; 
-    height:25px;
-    background-color: black;
-    text-align: center;
-    border-radius: 3px;
-}
-
-#follow-button-text {
-    color: white;
-}
-
-#follow-button-image {
-    width:20px; 
-    height:20px;
-}
-
-#common-footer {
-    height: 60px;
-}
-
-.navbar-dark {
-    background-color:  black;
-    opacity: 80%;
-}
-
-#footer-copy-right {
-    margin-left: 150px;
-    color: white;
-    opacity: 100%;
-    font-weight: 300;
-}
-
-#footer-follow {
-    margin-left: 250px;
-    color: white;
-    opacity: 100%;
-    font-weight: 300;
-}
-
-.footer-btn {
-    background-color: white;
-    width:30px; 
-    margin-left: 5px;
-}
-
-.footer-icon {
-    width:20px; 
-    height:20px;
-}
-
-#footer-follow-text {
-    margin-left: 30px;
-}
-
-@media screen and (min-width: 600px){
-    #float-navbar {
-        display: block;
-    }
-    .mobile-navbar {
-        display: none;
-    }
-}
-@media screen and (max-width: 600px){
-    #float-navbar {
-        display: none;
-    }
-    .mobile-navbar {
-        display: block;
-    }
 }
