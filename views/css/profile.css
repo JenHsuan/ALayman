@@ -1,0 +1,29 @@
+#page {
+  padding-left: 10%;
+  padding-right: 10%; }
+  #page h2 {
+    font-size: 70px;
+    color: #4A90E2;
+    font-weight: 300; }
+  #page > .title {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    min-width: 220px; }
+  #page .subtitle {
+    font-size: 18px;
+    font-weight: 300; }
+
+.profile-container {
+  min-width: 220px; }
+
+.profile-container h3 {
+  font-size: 32px;
+  color: #4A90E2;
+  font-weight: 100; }
+
+#personal-image {
+  width: 200px;
+  height: 200px; }
+
+/*# sourceMappingURL=profile.css.map */

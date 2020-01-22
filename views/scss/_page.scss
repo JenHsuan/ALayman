@@ -1,0 +1,19 @@
+#page {
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+    h2 {
+        font-size: $page-title-font-size;
+        color: $page-title-font-color;
+        font-weight: 300;
+    }
+    > .title {
+        margin-top: $page-title-margin;
+        margin-bottom: $page-title-margin;
+        text-align:center;
+        min-width:220px; 
+    }
+    .subtitle {
+        font-size: $page-subtitle-font-size;
+        font-weight: 300;
+    }
+}
