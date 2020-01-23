@@ -4,35 +4,10 @@ $page-title-margin: 80px;
 $page-title-font-size: 70px;
 $page-title-font-color: #4A90E2;
 @import 'page';
+@import 'section';
 
-%basic-content {
-    font-weight: 300;
-    font-size: 16px;
-    margin-top: 3%;
-    .highlight {
-        font-style: italic;
-    }
-}
-
-%basic-subtitle {
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 1%;
-}
-
-.experiences {
+.section {
     .item {
-        margin-bottom: 5%;
-        margin-top: 5%;
-        .subitem {
-            margin-top: 2%;
-        }
-        .title {
-            font-size: 32px;
-            color: #4A90E2;
-            font-weight: 200;
-        }
         .subtitle {
             @extend %basic-subtitle;
         }
@@ -61,7 +36,7 @@ $page-title-font-color: #4A90E2;
 
 
 @media screen and (max-width: 750px){
-    .experiences {
+    .section {
         .item {
             .description {
                 display: none;

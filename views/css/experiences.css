@@ -15,43 +15,41 @@
       font-size: 20px;
       font-weight: 300; }
 
-@media screen and (max-width: 600px) {
-  #page > .title > .subtitle {
-    text-align: left; } }
-.experiences .item .content, .experiences .item .description {
+.section .item {
+  margin-bottom: 5%;
+  margin-top: 5%; }
+  .section .item .subitem {
+    margin-top: 2%; }
+  .section .item .title {
+    font-size: 32px;
+    color: #4A90E2;
+    font-weight: 200; }
+
+.section .item .content, .section .item .description {
   font-weight: 300;
   font-size: 16px;
   margin-top: 3%; }
-  .experiences .item .content .highlight, .experiences .item .description .highlight {
+  .section .item .content .highlight, .section .item .description .highlight {
     font-style: italic; }
 
-.experiences .item .subtitle, .experiences .item .subject {
+.section .item .subtitle, .section .item .subject {
   font-size: 18px;
   color: black;
   font-weight: bold;
   margin-bottom: 1%; }
 
-.experiences .item {
-  margin-bottom: 5%;
-  margin-top: 5%; }
-  .experiences .item .subitem {
-    margin-top: 2%; }
-  .experiences .item .title {
-    font-size: 32px;
-    color: #4A90E2;
-    font-weight: 200; }
-  .experiences .item img {
-    width: 100px;
-    margin-top: 7px; }
+.section .item img {
+  width: 100px;
+  margin-top: 7px; }
 
 #careers img, #certifications img {
   width: 100px;
   margin-top: 2%; }
 
 @media screen and (max-width: 750px) {
-  .experiences .item .description {
+  .section .item .description {
     display: none; }
-  .experiences .item .subject {
+  .section .item .subject {
     font-size: 16px;
     color: black;
     font-weight: 300;

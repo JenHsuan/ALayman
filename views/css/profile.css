@@ -15,9 +15,6 @@
       font-size: 20px;
       font-weight: 300; }
 
-@media screen and (max-width: 600px) {
-  #page > .title > .subtitle {
-    text-align: left; } }
 .profile-container {
   min-width: 220px; }
   .profile-container p {
