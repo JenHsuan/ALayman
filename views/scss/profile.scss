@@ -1,5 +1,5 @@
 $page-padding: 10%;
-$page-subtitle-font-size: 18px;
+$page-subtitle-font-size: 20px;
 $page-title-margin: 80px;
 $page-title-font-size: 70px;
 $page-title-font-color: #4A90E2;
@@ -7,6 +7,9 @@ $page-title-font-color: #4A90E2;
 
 .profile-container {
     min-width:220px; 
+    p {
+        font-size: 16px;
+    }
 }
 
 .profile-container h3 {
@@ -18,4 +21,30 @@ $page-title-font-color: #4A90E2;
 #personal-image {
     width:200px; 
     height:200px;
+}
+
+#follow-button {
+    width:90px; 
+    height:25px;
+    background-color: black;
+    text-align: center;
+    border-radius: 3px;
+    a {
+        color: white;
+    }
+    img {
+        width:20px; 
+        height:20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .profile-container {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    #follow-button {
+        margin: 0 auto;
+        float: none;
+    }
 }

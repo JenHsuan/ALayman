@@ -10,12 +10,18 @@
     margin-bottom: 80px;
     text-align: center;
     min-width: 220px; }
-  #page .subtitle {
-    font-size: 18px;
-    font-weight: 300; }
+    #page > .title >
+    .subtitle {
+      font-size: 20px;
+      font-weight: 300; }
 
+@media screen and (max-width: 600px) {
+  #page > .title > .subtitle {
+    text-align: left; } }
 .profile-container {
   min-width: 220px; }
+  .profile-container p {
+    font-size: 16px; }
 
 .profile-container h3 {
   font-size: 32px;
@@ -25,5 +31,26 @@
 #personal-image {
   width: 200px;
   height: 200px; }
+
+#follow-button {
+  width: 90px;
+  height: 25px;
+  background-color: black;
+  text-align: center;
+  border-radius: 3px; }
+  #follow-button a {
+    color: white; }
+  #follow-button img {
+    width: 20px;
+    height: 20px; }
+
+@media screen and (max-width: 750px) {
+  .profile-container {
+    text-align: center;
+    padding-bottom: 5%; }
+
+  #follow-button {
+    margin: 0 auto;
+    float: none; } }
 
 /*# sourceMappingURL=profile.css.map */

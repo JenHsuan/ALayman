@@ -1,9 +1,13 @@
-$common-footer-height: 60px;
+$common-footer-height: 10%;
+#page {
+    margin-bottom: 200px;
+}
 
 #float-navbar {
     background-color: black;
+    opacity: 50%;
     z-index: 1; 
-    position: absolute;
+    position: fixed;
     left: 85%;
     top: 30%;
     border-radius: 5px;
@@ -12,34 +16,28 @@ $common-footer-height: 60px;
         width: 150px;
         text-align: center;
         font-weight: 400;
+        &:hover {
+            color: black;
+        }
     } 
-}
-
-#follow-button {
-    width:90px; 
-    height:25px;
-    background-color: black;
-    text-align: center;
-    border-radius: 3px;
-    a {
-        color: white;
-    }
-    img {
-        width:20px; 
-        height:20px;
+    &:hover {
+        opacity: 100%;
     }
 }
 
 #common-footer {
-    height: $common-footer-height;
+    //height: $common-footer-height;
+    background-color: black;
+    margin: 0;
+    padding-bottom: 10px;
     #copyright {
-        margin-left: 150px;
+        margin-left: 10%;
         color: white;
         opacity: 100%;
         font-weight: 300;
     }
     #follow {
-        margin-left: 250px;
+        margin-left: 10%;
         color: white;
         opacity: 100%;
         font-weight: 300;
@@ -53,16 +51,51 @@ $common-footer-height: 60px;
         }
         > #text {
             margin-left: 30px;
+            width: 100px;
+            &:hover::after { 
+                position: absolute; 
+            }
+            &:hover::after { 
+                content: "Click following buttons!"; 
+                top: -20px;
+                left: -5px;
+                color: black;
+                font-weight: bold;
+            }
         }
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 750px){
     #float-navbar {
         display: block;
     }
     .mobile-navbar {
         display: none;
+    }
+    #common-footer {
+        #follow {
+            display: block;
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 750px){
+    #float-navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        display: block;
+    }
+    #common-footer {
+        #follow {
+            display: block;
+            margin: 0 auto;
+            float: none;
+        }
+        #copyright {
+            margin: 0 auto;
+            float: none;
+        }
     }
 }
 @media screen and (max-width: 600px){
@@ -71,6 +104,15 @@ $common-footer-height: 60px;
     }
     .mobile-navbar {
         display: block;
+    }
+    #common-footer {
+        #follow {
+            display: none;
+        }
+        #copyright {
+            margin: 0 auto;
+            float: none;
+        }
     }
 }
 

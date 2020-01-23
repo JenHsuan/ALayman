@@ -11,9 +11,20 @@
         margin-bottom: $page-title-margin;
         text-align:center;
         min-width:220px; 
+        > 
+        .subtitle {
+            font-size: $page-subtitle-font-size;
+            font-weight: 300;
+        }
     }
-    .subtitle {
-        font-size: $page-subtitle-font-size;
-        font-weight: 300;
+}
+
+@media screen and (max-width: 600px){
+    #page {
+        > .title {
+            >  .subtitle {
+                text-align: left;
+            }
+        }
     }
 }

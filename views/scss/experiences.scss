@@ -1,12 +1,77 @@
 $page-padding: 10%;
-$page-subtitle-font-size: 18px;
+$page-subtitle-font-size: 20px;
 $page-title-margin: 80px;
 $page-title-font-size: 70px;
 $page-title-font-color: #4A90E2;
 @import 'page';
 
-.item-title {
-    font-size: 32px;
-    color: #4A90E2;
-    font-weight: 200;
+%basic-content {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 3%;
+    .highlight {
+        font-style: italic;
+    }
+}
+
+%basic-subtitle {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.experiences {
+    .item {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        .subitem {
+            margin-top: 2%;
+        }
+        .title {
+            font-size: 32px;
+            color: #4A90E2;
+            font-weight: 200;
+        }
+        .subtitle {
+            @extend %basic-subtitle;
+        }
+        .subject {
+            @extend %basic-subtitle;
+        }
+        .content {
+            @extend %basic-content;
+        }
+        .description {
+            @extend %basic-content;
+        }
+        img {
+            width: 100px;
+            margin-top: 7px;
+        }
+    }
+}
+
+#careers, #certifications {
+    img {
+        width: 100px;
+        margin-top: 2%;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .experiences {
+        .item {
+            .description {
+                display: none;
+            }
+            .subject {
+                font-size: 16px;
+                color: black;
+                font-weight: 300;
+                margin-bottom: 5%;
+            }
+        }
+    }
 }

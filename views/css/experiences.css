@@ -10,13 +10,51 @@
     margin-bottom: 80px;
     text-align: center;
     min-width: 220px; }
-  #page .subtitle {
-    font-size: 18px;
-    font-weight: 300; }
+    #page > .title >
+    .subtitle {
+      font-size: 20px;
+      font-weight: 300; }
 
-.item-title {
-  font-size: 32px;
-  color: #4A90E2;
-  font-weight: 200; }
+@media screen and (max-width: 600px) {
+  #page > .title > .subtitle {
+    text-align: left; } }
+.experiences .item .content, .experiences .item .description {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 3%; }
+  .experiences .item .content .highlight, .experiences .item .description .highlight {
+    font-style: italic; }
+
+.experiences .item .subtitle, .experiences .item .subject {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 1%; }
+
+.experiences .item {
+  margin-bottom: 5%;
+  margin-top: 5%; }
+  .experiences .item .subitem {
+    margin-top: 2%; }
+  .experiences .item .title {
+    font-size: 32px;
+    color: #4A90E2;
+    font-weight: 200; }
+  .experiences .item img {
+    width: 100px;
+    margin-top: 7px; }
+
+#careers img, #certifications img {
+  width: 100px;
+  margin-top: 2%; }
+
+@media screen and (max-width: 750px) {
+  .experiences .item .description {
+    display: none; }
+  .experiences .item .subject {
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 5%; } }
 
 /*# sourceMappingURL=experiences.css.map */
