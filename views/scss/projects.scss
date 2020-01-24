@@ -2,7 +2,7 @@ $page-padding: 0;
 $page-subtitle-font-size: 20px;
 $page-title-margin: 80px;
 $page-title-font-size: 70px;
-$page-title-font-color: #4A90E2;
+$page-title-font-color: white;
 @import 'page';
 @import 'section';
 
@@ -12,6 +12,29 @@ $page-title-font-color: #4A90E2;
         font-weight: 500;
     }
 } 
+
 .des{
     font-size: 10px;
+}
+
+body {
+    background-color: #4A90E2;
+}
+
+#float-navbar {
+    opacity: 100%;
+}
+
+#tbl {
+    .title {
+        font-weight: 100;
+        font-size: 32px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #summary {
+            display: none;
+    }
 }

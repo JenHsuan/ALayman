@@ -12,6 +12,7 @@
     min-width: 220px; }
     #page > .title >
     .subtitle {
+      color: #4A90E2;
       font-size: 20px;
       font-weight: 300; }
 
@@ -49,5 +50,8 @@ body {
     text-align: center;
     font-size: 28px;
     color: white; }
+
+#float-navbar {
+  opacity: 100%; }
 
 /*# sourceMappingURL=contact.css.map */

@@ -19,6 +19,10 @@ $page-title-font-color: #4A90E2;
         }
         .description {
             @extend %basic-content;
+            .location {
+                font-style: italic;
+                font-weight: 500;
+            }
         }
         img {
             width: 100px;

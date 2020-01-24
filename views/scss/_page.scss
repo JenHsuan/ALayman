@@ -13,6 +13,7 @@
         min-width:220px; 
         > 
         .subtitle {
+            color: $page-title-font-color;
             font-size: $page-subtitle-font-size;
             font-weight: 300;
         }
