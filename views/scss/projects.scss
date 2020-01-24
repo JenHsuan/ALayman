@@ -1,0 +1,17 @@
+$page-padding: 0;
+$page-subtitle-font-size: 20px;
+$page-title-margin: 80px;
+$page-title-font-size: 70px;
+$page-title-font-color: #4A90E2;
+@import 'page';
+@import 'section';
+
+.card-content {
+    .title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+} 
+.des{
+    font-size: 10px;
+}

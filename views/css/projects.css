@@ -1,0 +1,35 @@
+#page {
+  padding-left: 0;
+  padding-right: 0; }
+  #page h2 {
+    font-size: 70px;
+    color: #4A90E2;
+    font-weight: 300; }
+  #page > .title {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    min-width: 220px; }
+    #page > .title >
+    .subtitle {
+      font-size: 20px;
+      font-weight: 300; }
+
+.section .item {
+  margin-bottom: 5%;
+  margin-top: 5%; }
+  .section .item .subitem {
+    margin-top: 2%; }
+  .section .item .title {
+    font-size: 32px;
+    color: #4A90E2;
+    font-weight: 200; }
+
+.card-content .title {
+  font-size: 16px;
+  font-weight: 500; }
+
+.des {
+  font-size: 10px; }
+
+/*# sourceMappingURL=projects.css.map */

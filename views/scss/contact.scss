@@ -1,0 +1,36 @@
+$page-padding: 10%;
+$page-subtitle-font-size: 20px;
+$page-title-margin: 80px;
+$page-title-font-size: 70px;
+$page-title-font-color: #4A90E2;
+@import 'page';
+@import 'section';
+
+body {
+    background-image: url('../images/alaymancover.png');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main {
+  position: absolute;   
+  transform:translate(-50%,-50%);  
+  top: 50%;
+  left: 50%;
+  .name {
+      font-weight: 500;
+      font-size: 80px;
+      color: white;
+  }
+  .resume {
+      font-weight: 300;
+      text-align: center;
+      font-size: 28px;
+      color: white;
+  }
+}
