@@ -39,7 +39,7 @@ body {
     opacity: 100%;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
     .main {
         .name {
             font-weight: 300;
@@ -48,5 +48,8 @@ body {
         .resume {
             font-size: 18px;
         }
+    }
+    body {
+        background-image: url('../images/alaymancover-mobile.png');
     }
 }
