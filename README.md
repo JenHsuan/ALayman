@@ -7,7 +7,6 @@ Web Programming with Python and JavaScript
 ## Technical stack
 * The libraries I used includes the following items.
 1. Bootstrap
-2. Material design
 * The concepts I used in my stlesheets includes the following items.
 1. Sass:
 - variables
