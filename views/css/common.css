@@ -85,7 +85,8 @@
     display: none; }
   #common-footer #copyright {
     margin: 0 auto;
-    float: none; } }
+    float: none;
+    padding-left: 10%; } }
 .navbar-dark {
   background-color: black;
   opacity: 80%; }
