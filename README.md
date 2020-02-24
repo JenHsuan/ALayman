@@ -1,9 +1,13 @@
-# Project 0
+# Project 0 for CS50 web: web resume
 
 Web Programming with Python and JavaScript
 
 ## Description
 * It's a project for my personal resume. It includes profile, projects, abilities, and the experiences page.
+
+## Demo video
+[![Watch the video](https://img.youtube.com/vi/vubZyBekDzY/maxresdefault.jpg)](https://www.youtube.com/watch?v=vubZyBekDzY)
+
 ## Technical stack
 * The libraries I used includes the following items.
 1. Bootstrap
