@@ -29,7 +29,7 @@ window.onload = function() {
                     cardBlock.className = 'card-block'
     
                     var subTitle = document.createElement('h5');
-                    if (dele.subtitle.match(/[\u3400-\u9FBF]/)) {
+                    if (ele.subtitle.match(/[\u3400-\u9FBF]/)) {
                         subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,30}', 'g'))[0] + "...";
                     } else {
                         subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,55}', 'g'))[0] + "...";
