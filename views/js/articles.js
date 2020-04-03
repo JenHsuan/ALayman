@@ -26,8 +26,8 @@ window.onload = function() {
 
                 var cardTitle = document.createElement('h5');
                 cardTitle.className = 'card-title'
-                if (length(ele.title) < 80) {
-                    for (var i = 0; i < 80 - length(ele.title); i++) {
+                if (ele.title.length < 80) {
+                    for (var i = 0; i < 80 - ele.title.length; i++) {
                         ele.title += " "
                     }
                 }
@@ -37,8 +37,8 @@ window.onload = function() {
                 cardBlock.className = 'card-block'
 
                 var subTitle = document.createElement('h5');
-                if (length(ele.subtitle) < 100) {
-                    for (var i = 0; i < 100 - length(ele.subtitle); i++) {
+                if (ele.subtitle.length < 100) {
+                    for (var i = 0; i < 100 - ele.subtitle.length; i++) {
                         ele.subtitle += " "
                     }
                 }
