@@ -26,13 +26,23 @@ window.onload = function() {
 
                 var cardTitle = document.createElement('h5');
                 cardTitle.className = 'card-title'
-                cardTitle.innerHTML = ele.title.match(new RegExp('.{1,70}', 'g'))[0] + "...";
+                if (length(ele.title) < 80) {
+                    for (var i = 0; i < 80 - length(ele.title); i++) {
+                        ele.title += " "
+                    }
+                }
+                cardTitle.innerHTML = ele.title.match(new RegExp('.{1,80}', 'g'))[0] + "...";
 
                 var cardBlock = document.createElement('div');
                 cardBlock.className = 'card-block'
 
                 var subTitle = document.createElement('h5');
-                subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,60}', 'g'))[0] + "...";
+                if (length(ele.subtitle) < 100) {
+                    for (var i = 0; i < 100 - length(ele.subtitle); i++) {
+                        ele.subtitle += " "
+                    }
+                }
+                subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,100}', 'g'))[0] + "...";
                 cardBlock.appendChild(subTitle)
 
                 var a = document.createElement('a');
