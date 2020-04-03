@@ -32,7 +32,7 @@ window.onload = function() {
                 cardBlock.className = 'card-block'
 
                 var subTitle = document.createElement('h5');
-                subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,80}', 'g'))[0] + "...";
+                subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,60}', 'g'))[0] + "...";
                 cardBlock.appendChild(subTitle)
 
                 var a = document.createElement('a');
