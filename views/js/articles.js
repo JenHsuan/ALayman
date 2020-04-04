@@ -1,7 +1,18 @@
 window.onload = function() {
     console.log("window loaded")
     $.ajax({
-        url:'https://datacollector2020.herokuapp.com/',
+        url:'https://datacollector2020.herokuapp.com/health',
+        type: "get",
+        dataType: "json",
+        success: function() {
+            getData();
+        }
+    });
+};
+
+function getData() {
+    $.ajax({
+        url:'https://datacollector2020.herokuapp.com/getBlogData',
         type: "get",
         dataType: "json",
         success: function(data) {
@@ -54,4 +65,4 @@ window.onload = function() {
             }
         }
     });
-};
+}
