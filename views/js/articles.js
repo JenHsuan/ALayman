@@ -1,7 +1,7 @@
 window.onload = function() {
     console.log("window loaded")
     $.ajax({
-        url:'https://datacollector2020.herokuapp.com/health',
+        url:'https://datacollector2020.herokuapp.com/api/health',
         type: "get",
         dataType: "json",
         success: function() {
@@ -12,7 +12,7 @@ window.onload = function() {
 
 function getData() {
     $.ajax({
-        url:'https://datacollector2020.herokuapp.com/getBlogData',
+        url:'https://datacollector2020.herokuapp.com/api/getBlogData',
         type: "get",
         dataType: "json",
         success: function(data) {
