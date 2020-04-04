@@ -38,7 +38,7 @@ window.onload = function() {
     
                     var a = document.createElement('a');
                     a.className = "btn btn-primary"
-                    a.innerHTML = "check"
+                    a.innerHTML = "Read more"
                     a.href = ele.url
             
                     cardBody.appendChild(cardTitle)
