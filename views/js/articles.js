@@ -6,7 +6,7 @@ window.onload = function() {
         dataType: "json",
         success: function(data) {
             var projects = document.getElementById('projects')
-            if (projects !== undefined) {
+            if (projects !== undefined && projects !== null) {
                 data.forEach(ele => {
                     var div = document.createElement('div');
                     div.className = 'col-md-4 col-xs-12 content'
