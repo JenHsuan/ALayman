@@ -5,8 +5,7 @@ window.onload = function() {
         type: "get",
         dataType: "json",
         success: function() {
-            getData();
-            hideLoader();    
+            getData(); 
         }
     });
 };
@@ -22,6 +21,7 @@ function getData() {
         type: "get",
         dataType: "json",
         success: function(data) {
+            hideLoader();
             var projects = document.getElementById('medium')
             if (projects !== undefined && projects !== null) {
                 data.forEach(ele => {
