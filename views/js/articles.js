@@ -1,7 +1,7 @@
 window.onload = function() {
     console.log("window loaded")
-    $.ajax({
-        url:'http://127.0.0.1:5000/api/health',
+    $.ajax({        
+        url:'https://datacollector2020.herokuapp.com/api/health',
         type: "get",
         dataType: "json",
         success: function() {
@@ -19,7 +19,7 @@ function getData() {
     var projects = document.getElementById('medium')
     if (projects !== undefined && projects !== null) {
         $.ajax({
-            url:'http://127.0.0.1:5000/api/getBlogData',
+            url:'https://datacollector2020.herokuapp.com/api/getBlogData',
             type: "get",
             dataType: "json",
             success: function(data) {
@@ -35,7 +35,7 @@ function getData() {
     var devto = document.getElementById('devto')
     if (devto !== undefined && devto !== null) {
         $.ajax({
-            url:'http://127.0.0.1:5000/api/devtodata',
+            url:'https://datacollector2020.herokuapp.com/api/devtodata',
             type: "get",
             dataType: "json",
             success: function(data) {

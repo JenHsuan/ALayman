@@ -115,12 +115,12 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
   background: #fff; }
 
-#medium #loader {
+#medium #loader, #devto #loader {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%; }
-  #medium #loader img {
+  #medium #loader img, #devto #loader img {
     min-width: 5%; }
 
 /*# sourceMappingURL=projects.css.map */
