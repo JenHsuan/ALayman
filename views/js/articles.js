@@ -62,6 +62,7 @@ function appendDevToChild(ele) {
     img.className = "card-img-top"
     img.setAttribute('src', ele.image);
     img.setAttribute('alt', ele.title);
+    img.setAttribute('title', ele.title);
 
     var cardBody = document.createElement('div');
     cardBody.className = 'card-body'
@@ -111,6 +112,7 @@ function appendMediumChild(ele) {
     img.className = "card-img-top"
     img.setAttribute('src', ele.image);
     img.setAttribute('alt', ele.title);
+    img.setAttribute('title', ele.title);
 
     var cardBody = document.createElement('div');
     cardBody.className = 'card-body'
