@@ -67,7 +67,7 @@ function appendDevToChild(ele) {
 
     var figure = document.createElement("figure");
     var figcaption = document.createElement("figcaption");
-    figcaption.innerHTML = ele.title;
+    figcaption.innerHTML = ele.tags.join();
     figure.appendChild(img);
     figure.appendChild(figcaption);
 
@@ -81,13 +81,9 @@ function appendDevToChild(ele) {
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
 
-    var subTitle = document.createElement('h5');
-    subTitle.innerHTML = ele.tags.join();
-
     var time = document.createElement('h6');
     time.innerHTML = 'Date: ' + ele.date;
 
-    cardBlock.appendChild(subTitle)
     cardBlock.appendChild(time)
 
     var a = document.createElement('a');
