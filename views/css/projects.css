@@ -76,6 +76,21 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px; }
+  .card .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip */
+    position: absolute;
+    left: 120px;
+    top: -10px;
+    z-index: 1; }
+
+.card:hover .tooltiptext {
+  visibility: visible; }
 
 .card-block {
   margin-left: 3%;

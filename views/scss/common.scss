@@ -52,16 +52,6 @@ $common-footer-height: 10%;
         > #text {
             margin-left: 30px;
             width: 100px;
-            &:hover::after { 
-                position: absolute; 
-            }
-            &:hover::after { 
-                content: "Click following buttons!"; 
-                top: -20px;
-                left: -5px;
-                color: black;
-                font-weight: bold;
-            }
         }
     }
 }
