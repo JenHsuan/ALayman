@@ -59,10 +59,17 @@ function appendDevToChild(ele) {
     card.className = 'card'
 
     var img = document.createElement("img");
+
     img.className = "card-img-top"
     img.setAttribute('src', ele.image);
     img.setAttribute('alt', ele.title);
     img.setAttribute('title', ele.title);
+
+    var figure = document.createElement("figure");
+    var figcaption = document.createElement("figcaption");
+    figcaption.innerHTML = ele.title;
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
 
     var cardBody = document.createElement('div');
     cardBody.className = 'card-body'
@@ -92,7 +99,7 @@ function appendDevToChild(ele) {
     cardBody.appendChild(cardBlock)
     cardBody.appendChild(a)
 
-    card.appendChild(img)
+    card.appendChild(figure)
     card.appendChild(cardBody)
     
     div.appendChild(card)
