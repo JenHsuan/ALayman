@@ -74,7 +74,7 @@ function appendDevToChild(ele) {
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
 
-    var subTitle = document.createElement('h2');
+    var subTitle = document.createElement('h5');
     subTitle.innerHTML = ele.tags.join();
 
     var time = document.createElement('h6');
@@ -123,7 +123,7 @@ function appendMediumChild(ele) {
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
 
-    var subTitle = document.createElement('h2');
+    var subTitle = document.createElement('h5');
     if (ele.subtitle.match(/[\u3400-\u9FBF]/)) {
         subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,30}', 'g'))[0] + "...";
     } else {
