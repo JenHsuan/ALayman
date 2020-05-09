@@ -67,7 +67,7 @@ function appendDevToChild(ele) {
     var cardBody = document.createElement('div');
     cardBody.className = 'card-body'
 
-    var cardTitle = document.createElement('h5');
+    var cardTitle = document.createElement('h1');
     cardTitle.className = 'card-title'
     cardTitle.innerHTML = ele.title.match(new RegExp('.{1,55}', 'g'))[0] + "...";;
 
