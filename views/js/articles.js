@@ -58,10 +58,6 @@ function appendDevToChild(ele) {
     var card = document.createElement('div');
     card.className = 'card'
 
-    var tooltiptext = document.createElement('div');
-    tooltiptext.className = 'tooltiptext'
-    tooltiptext.innerHTML = ele.title;
-
     var img = document.createElement("img");
     img.className = "card-img-top"
     img.setAttribute('src', ele.image);
@@ -96,7 +92,6 @@ function appendDevToChild(ele) {
     cardBody.appendChild(cardBlock)
     cardBody.appendChild(a)
 
-    card.appendChild(tooltiptext)
     card.appendChild(img)
     card.appendChild(cardBody)
     
@@ -111,10 +106,6 @@ function appendMediumChild(ele) {
 
     var card = document.createElement('div');
     card.className = 'card'
-
-    var tooltiptext = document.createElement('div');
-    tooltiptext.className = 'tooltiptext'
-    tooltiptext.innerHTML = ele.title;
 
     var img = document.createElement("img");
     img.className = "card-img-top"
@@ -149,7 +140,6 @@ function appendMediumChild(ele) {
     cardBody.appendChild(cardBlock)
     cardBody.appendChild(a)
 
-    card.appendChild(tooltiptext)
     card.appendChild(img)
     card.appendChild(cardBody)
     
