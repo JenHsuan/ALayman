@@ -61,13 +61,14 @@ function appendDevToChild(ele) {
     var img = document.createElement("img");
     img.className = "card-img-top"
     img.setAttribute('src', ele.image);
+    img.setAttribute('alt', ele.title);
 
     var cardBody = document.createElement('div');
     cardBody.className = 'card-body'
 
     var cardTitle = document.createElement('h5');
     cardTitle.className = 'card-title'
-    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,65}', 'g'))[0] + "...";;
+    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,55}', 'g'))[0] + "...";;
 
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
@@ -109,13 +110,14 @@ function appendMediumChild(ele) {
     var img = document.createElement("img");
     img.className = "card-img-top"
     img.setAttribute('src', ele.image);
+    img.setAttribute('alt', ele.title);
 
     var cardBody = document.createElement('div');
     cardBody.className = 'card-body'
 
     var cardTitle = document.createElement('h5');
     cardTitle.className = 'card-title'
-    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,55}', 'g'))[0] + "...";
+    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,50}', 'g'))[0] + "...";
 
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
