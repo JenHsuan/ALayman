@@ -84,7 +84,7 @@
             </span>
             <span class="name">A Layman</span>
             <span>
-                 <input type="text" placeholder="Search.." name="search" id="search">
+                 <input type="text" placeholder="Search.." name="search" id="search" id="Str" onchange="handleTextChanged(this.id)">
             </span>
         </div>
         <div class="articles-title">
@@ -102,10 +102,10 @@
             <div class="section">
                 <div class="container">
                     <div id="medium" class="row item">
-                        <span id="loader">
-                            <img src="views/images/ajax-loader.gif" alt="">
-                        </span>
                     </div>
+                    <span id="loader">
+                        <img src="views/images/ajax-loader.gif" alt="">
+                    </span>
                 </div>
             </div>
             <br>

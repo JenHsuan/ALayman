@@ -1,5 +1,6 @@
 //const API_BASE_URL = 'http://127.0.0.1:5000/';
 const API_BASE_URL = 'https://datacollector2020.herokuapp.com/';
+var keyword=""
 
 window.onload = function() {
     console.log("window loaded")
@@ -13,9 +14,63 @@ window.onload = function() {
     });
 };
 
+function handleTextChanged(id) {
+    console.log(id)
+    var newKeyword=document.getElementById(id).value;
+    if(newKeyword.trim() !== keyword.trim()) {
+        removeChilds('medium');
+        showLoader();    
+        var searchFunc = newKeyword.trim() !== '' ? () => getDataByKeyword(newKeyword) : getData();
+        $.ajax({        
+            url: `${API_BASE_URL}api/health`,
+            type: "get",
+            dataType: "json",
+            success: searchFunc
+        });
+        keyword = newKeyword; 
+    }
+}
+
+function getDataByKeyword(keyword) {
+    var projects = document.getElementById('medium')
+    if (projects !== undefined && projects !== null) {
+        $.ajax({
+            url:`${API_BASE_URL}api/getBlogData/${keyword}`,
+            type: "get",
+            dataType: "json",
+            success: function(data) {
+                hideLoader();
+                data.forEach(ele => {
+                    var div = appendMediumChild(ele);
+                    projects.appendChild(div)
+                });
+            },
+            error: () => {
+                hideLoader();
+                var div = document.createElement('h5');
+                div.className = 'no-articles-warning'
+                div.innerHTML = 'No articles!';
+                projects.appendChild(div)
+            }
+        });
+    }
+}
+
 function hideLoader() {
     var loader = document.getElementById("loader");
     loader.style.display = 'none'; 
+}
+
+function showLoader() {
+    var loader = document.getElementById("loader");
+    loader.style.display = 'block'; 
+}
+
+function removeChilds(id) {
+    const parent = document.getElementById(id);
+    while (parent.firstChild) {
+        parent.firstChild.remove();
+    }
 }
 
 function getData() {

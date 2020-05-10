@@ -186,14 +186,18 @@ figcaption {
     background: #fff;
 }
 
-#medium {
-    #loader {
-        position: absolute;   
-        transform:translate(-50%,-50%);  
-        top: 60%;
-        left: 50%;
-        img {
-            min-width: 5%;
-        }
+#loader {
+    position: absolute;   
+    transform:translate(-50%,-50%);  
+    top: 60%;
+    left: 50%;
+    img {
+        min-width: 5%;
     }
+}
+
+.no-articles-warning {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
 }
