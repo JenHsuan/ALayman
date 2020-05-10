@@ -52,10 +52,10 @@
 
 .articles-title {
   padding-left: 3%;
-  padding-top: 5%; }
+  padding-top: 4%; }
   .articles-title h1 {
     color: #000000;
-    font-size: 46px;
+    font-size: 48px;
     font-weight: 300;
     opacity: 0.9; }
 
@@ -76,10 +76,20 @@
   margin-top: 3%;
   margin-left: 3%; }
   .brand-title span img {
-    width: 3%; }
+    width: 2%; }
   .brand-title .name {
-    font-weight: 400;
+    font-weight: 200;
     font-size: 16px; }
+
+#articles-author-image {
+  width: 8%; }
+
+.articles-author-logo {
+  margin-left: 45%; }
+
+#search {
+  margin-left: 2%;
+  width: 30%; }
 
 .des {
   font-size: 10px; }

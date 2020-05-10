@@ -147,7 +147,21 @@ function appendMediumChild(ele) {
     } else {
         subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,130}', 'g'))[0] + "...";
     }
+
+    var ul = document.createElement('ul');
+
+    var author = document.createElement('li');
+    author.className = 'card-subtitle';
+    author.innerHTML = 'Author: ' + ele.name;
+
+    var time = document.createElement('li');
+    time.className = 'card-subtitle'
+    time.innerHTML = 'Date: ' + ele.time;
+
+    ul.appendChild(author)
+    ul.appendChild(time)
     cardBlock.appendChild(subTitle)
+    cardBlock.appendChild(ul)
 
     var btnDiv = document.createElement('div');
     btnDiv.className = 'col-md-12 col-xs-12 text-center'
