@@ -69,7 +69,7 @@ function appendDevToChild(ele) {
 
     var figure = document.createElement("figure");
     var figcaption = document.createElement("figcaption");
-    figcaption.innerHTML = ele.tags.join();
+    figcaption.innerHTML = ele.link;
     figure.appendChild(img);
     figure.appendChild(figcaption);
 
@@ -131,6 +131,12 @@ function appendMediumChild(ele) {
     img.setAttribute('alt', ele.title);
     img.setAttribute('title', ele.title);
 
+    var figure = document.createElement("figure");
+    var figcaption = document.createElement("figcaption");
+    figcaption.innerHTML = ele.url;
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
+
     var cardBody = document.createElement('div');
     cardBody.className = 'card-body'
 
@@ -142,15 +148,15 @@ function appendMediumChild(ele) {
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
 
-    var subTitle = document.createElement('h5');
+    var ul = document.createElement('ul');
+
+    var subTitle = document.createElement('li');
     subTitle.className = 'card-subtitle';
     if (ele.subtitle.match(/[\u3400-\u9FBF]/)) {
-        subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,100}', 'g'))[0] + "...";
+        subTitle.innerHTML = 'Introduction: ' + ele.subtitle.match(new RegExp('.{1,100}', 'g'))[0] + "...";
     } else {
-        subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,130}', 'g'))[0] + "...";
+        subTitle.innerHTML = 'Introduction: ' + ele.subtitle.match(new RegExp('.{1,130}', 'g'))[0] + "...";
     }
-
-    var ul = document.createElement('ul');
 
     var author = document.createElement('li');
     author.className = 'card-subtitle';
@@ -162,7 +168,7 @@ function appendMediumChild(ele) {
 
     ul.appendChild(author)
     ul.appendChild(time)
-    cardBlock.appendChild(subTitle)
+    ul.appendChild(subTitle)
     cardBlock.appendChild(ul)
 
     var btnDiv = document.createElement('div');
@@ -178,7 +184,8 @@ function appendMediumChild(ele) {
     cardBody.appendChild(cardBlock)
     cardBody.appendChild(btnDiv)
 
-    card.appendChild(img)
+    //card.appendChild(img)
+    card.appendChild(figure)
     card.appendChild(cardBody)
     
     div.appendChild(card)

@@ -133,8 +133,8 @@ body {
 
 figcaption {
   font-weight: 200;
-  font-size: 10px;
-  color: white; }
+  font-size: 6px;
+  opacity: 0.3; }
 
 .card-subtitle {
   font-weight: 200;
