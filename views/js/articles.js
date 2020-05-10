@@ -78,7 +78,8 @@ function appendDevToChild(ele) {
 
     var cardTitle = document.createElement('h1');
     cardTitle.className = 'card-title'
-    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,80}', 'g'))[0] + "...";;
+    //cardTitle.innerHTML = ele.title.match(new RegExp('.{1,80}', 'g'))[0] + "...";;
+    cardTitle.innerHTML = ele.title;
 
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
@@ -135,7 +136,8 @@ function appendMediumChild(ele) {
 
     var cardTitle = document.createElement('h1');
     cardTitle.className = 'card-title'
-    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,70}', 'g'))[0] + "...";
+    //cardTitle.innerHTML = ele.title.match(new RegExp('.{1,70}', 'g'))[0] + "...";
+    cardTitle.innerHTML = ele.title;
 
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
