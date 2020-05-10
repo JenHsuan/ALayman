@@ -114,7 +114,11 @@ body {
     margin-top: 3%;
     margin-left: 3%; }
     .brand-title span img {
-      width: 5%; } }
+      width: 5%; }
+
+  #search {
+    margin-left: 2%;
+    width: 50%; } }
 .card {
   background-color: white;
   font-size: 1em;
