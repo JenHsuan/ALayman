@@ -6,8 +6,9 @@
     color: #4A90E2;
     font-weight: 300; }
   #page > .title {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 0;
     text-align: center;
     min-width: 220px;
     font-weight: 400; }

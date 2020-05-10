@@ -50,6 +50,37 @@
   font-size: 16px;
   font-weight: 500; }
 
+.articles-title {
+  padding-left: 3%;
+  padding-top: 5%; }
+  .articles-title h1 {
+    color: #000000;
+    font-size: 46px;
+    font-weight: 300;
+    opacity: 0.9; }
+
+.articles-subtitle {
+  color: #000000;
+  opacity: 0.7;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 5%; }
+
+.articles-author {
+  text-align: center;
+  color: #4A90E2;
+  font-weight: 200;
+  font-size: 16px; }
+
+.brand-title {
+  margin-top: 3%;
+  margin-left: 3%; }
+  .brand-title span img {
+    width: 3%; }
+  .brand-title .name {
+    font-weight: 400;
+    font-size: 16px; }
+
 .des {
   font-size: 10px; }
 
@@ -58,11 +89,6 @@ body {
 
 #float-navbar {
   opacity: 100%; }
-
-#tbl .title {
-  font-weight: 100;
-  font-size: 32px;
-  color: #5E4DCC; }
 
 @media screen and (max-width: 750px) {
   #summary {
@@ -137,12 +163,12 @@ figcaption {
   border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
   background: #fff; }
 
-#medium #loader, #devto #loader {
+#medium #loader {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 60%;
   left: 50%; }
-  #medium #loader img, #devto #loader img {
+  #medium #loader img {
     min-width: 5%; }
 
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=articles.css.map */
