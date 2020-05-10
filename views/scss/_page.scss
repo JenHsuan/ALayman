@@ -11,6 +11,7 @@
         margin-bottom: $page-title-margin;
         text-align:center;
         min-width:220px; 
+        font-weight: $page-title-font-weight;
         > .subtitle {
             color: $page-title-font-color;
             font-size: $page-subtitle-font-size;

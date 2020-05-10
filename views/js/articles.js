@@ -1,7 +1,10 @@
+//const API_BASE_URL = 'http://127.0.0.1:5000/';
+const API_BASE_URL = 'https://datacollector2020.herokuapp.com/';
+
 window.onload = function() {
     console.log("window loaded")
     $.ajax({        
-        url:'https://datacollector2020.herokuapp.com/api/health',
+        url: `${API_BASE_URL}api/health`,
         type: "get",
         dataType: "json",
         success: function() {
@@ -19,7 +22,7 @@ function getData() {
     var projects = document.getElementById('medium')
     if (projects !== undefined && projects !== null) {
         $.ajax({
-            url:'https://datacollector2020.herokuapp.com/api/getBlogData',
+            url:`${API_BASE_URL}api/getBlogData`,
             type: "get",
             dataType: "json",
             success: function(data) {
@@ -35,7 +38,7 @@ function getData() {
     var devto = document.getElementById('devto')
     if (devto !== undefined && devto !== null) {
         $.ajax({
-            url:'https://datacollector2020.herokuapp.com/api/devtodata',
+            url:`${API_BASE_URL}api/devtodata`,
             type: "get",
             dataType: "json",
             success: function(data) {
@@ -51,9 +54,8 @@ function getData() {
 
 
 function appendDevToChild(ele) {
-    console.log(ele)
     var div = document.createElement('div');
-    div.className = 'col-md-4 col-xs-12 content'
+    div.className = 'col-md-6 col-xs-12 content'
 
     var card = document.createElement('div');
     card.className = 'card'
@@ -76,24 +78,36 @@ function appendDevToChild(ele) {
 
     var cardTitle = document.createElement('h1');
     cardTitle.className = 'card-title'
-    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,55}', 'g'))[0] + "...";;
+    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,80}', 'g'))[0] + "...";;
 
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
 
-    var time = document.createElement('h6');
+    var ul = document.createElement('ul');
+
+    var tags = document.createElement('li');
+    tags.className = 'card-subtitle';
+    tags.innerHTML = 'Tags: ' + ele.tags.join();
+
+    var time = document.createElement('li');
+    time.className = 'card-subtitle'
     time.innerHTML = 'Date: ' + ele.date;
 
-    cardBlock.appendChild(time)
+    var btnDiv = document.createElement('div');
+    btnDiv.className = 'col-md-12 col-xs-12 text-center'
 
     var a = document.createElement('a');
-    a.className = "btn btn-primary"
-    a.innerHTML = "Read more"
+    a.className = "btn read-btn"
+    a.innerHTML = "Read the article"
     a.href = ele.link
+    btnDiv.appendChild(a)
 
+    ul.appendChild(tags)
+    ul.appendChild(time)
+    cardBlock.appendChild(ul)
     cardBody.appendChild(cardTitle)
     cardBody.appendChild(cardBlock)
-    cardBody.appendChild(a)
+    cardBody.appendChild(btnDiv)
 
     card.appendChild(figure)
     card.appendChild(cardBody)
@@ -105,7 +119,7 @@ function appendDevToChild(ele) {
 
 function appendMediumChild(ele) {
     var div = document.createElement('div');
-    div.className = 'col-md-4 col-xs-12 content'
+    div.className = 'col-md-6 col-xs-12 content'
 
     var card = document.createElement('div');
     card.className = 'card'
@@ -121,27 +135,32 @@ function appendMediumChild(ele) {
 
     var cardTitle = document.createElement('h1');
     cardTitle.className = 'card-title'
-    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,50}', 'g'))[0] + "...";
+    cardTitle.innerHTML = ele.title.match(new RegExp('.{1,70}', 'g'))[0] + "...";
 
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
 
     var subTitle = document.createElement('h5');
+    subTitle.className = 'card-subtitle';
     if (ele.subtitle.match(/[\u3400-\u9FBF]/)) {
-        subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,30}', 'g'))[0] + "...";
+        subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,100}', 'g'))[0] + "...";
     } else {
-        subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,55}', 'g'))[0] + "...";
+        subTitle.innerHTML = ele.subtitle.match(new RegExp('.{1,130}', 'g'))[0] + "...";
     }
     cardBlock.appendChild(subTitle)
 
+    var btnDiv = document.createElement('div');
+    btnDiv.className = 'col-md-12 col-xs-12 text-center'
+
     var a = document.createElement('a');
-    a.className = "btn btn-primary"
-    a.innerHTML = "Read more"
+    a.className = "btn read-btn"
+    a.innerHTML = "Read the article"
     a.href = ele.url
+    btnDiv.appendChild(a)
 
     cardBody.appendChild(cardTitle)
     cardBody.appendChild(cardBlock)
-    cardBody.appendChild(a)
+    cardBody.appendChild(btnDiv)
 
     card.appendChild(img)
     card.appendChild(cardBody)

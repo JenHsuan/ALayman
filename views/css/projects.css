@@ -3,15 +3,16 @@
   padding-right: 0; }
   #page h2 {
     font-size: 70px;
-    color: white;
+    color: #4A90E2;
     font-weight: 300; }
   #page > .title {
     margin-top: 80px;
     margin-bottom: 80px;
     text-align: center;
-    min-width: 220px; }
+    min-width: 220px;
+    font-weight: 400; }
     #page > .title > .subtitle {
-      color: white;
+      color: #4A90E2;
       font-size: 20px;
       font-weight: 300; }
 
@@ -52,7 +53,7 @@
   font-size: 10px; }
 
 body {
-  background-color: #4A90E2; }
+  background-color: #F2F2F2; }
 
 #float-navbar {
   opacity: 100%; }
@@ -60,7 +61,7 @@ body {
 #tbl .title {
   font-weight: 100;
   font-size: 32px;
-  color: white; }
+  color: #5E4DCC; }
 
 @media screen and (max-width: 750px) {
   #summary {
@@ -71,15 +72,31 @@ body {
   overflow: hidden;
   padding: 0;
   border: none;
-  border-radius: .28571429rem;
+  border-radius: 2%;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px; }
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%; }
 
 figcaption {
   font-weight: 200;
-  font-size: 14px; }
+  font-size: 10px;
+  color: white; }
+
+.card-subtitle {
+  font-weight: 200;
+  font-size: 16px; }
+
+.read-btn {
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 3%;
+  margin-top: 5%;
+  border-radius: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #4A90E2;
+  color: white; }
 
 .card-block {
   margin-left: 3%;
@@ -99,8 +116,8 @@ figcaption {
 
 .card-title {
   margin-left: 2%;
-  font-size: 1.28571429em;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 1.2857em; }
 
 .card-text {
