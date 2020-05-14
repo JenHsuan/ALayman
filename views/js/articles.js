@@ -296,7 +296,7 @@ function appendJsonLd(data){
                     "@type": "Person",
                     "name": ele.name
                 },
-                "dataPublished": ele.date,
+                "datePublished": ele.date,
                 "url": ele.link
             }
             list.push(t)
