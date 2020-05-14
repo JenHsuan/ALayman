@@ -292,6 +292,10 @@ function appendJsonLd(data){
                 "@context": "http://schema.org",  
                 "@type": "Article", 
                 "name": ele.title,
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://jenhsuan.github.io/ALayman/articles.html"
+                 },
                 "author": {
                     "@type": "Person",
                     "name": ele.name
@@ -320,6 +324,10 @@ function appendJsonLd(data){
                 "@context": "http://schema.org",  
                 "@type": "Article", 
                 "name": ele.title,
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://jenhsuan.github.io/ALayman/100DaysOfCode.html"
+                 },
                 "author": {
                     "@type": "Person",
                     "name": ele.name
