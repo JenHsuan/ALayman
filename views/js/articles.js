@@ -305,7 +305,7 @@ function appendJsonLd(data){
                 "image": ele.image,
                 "publisher": {
                     "@type": "Organization",
-                    "name": ele.name,
+                    "name": ele.name,
                     "logo": "https://jenhsuan.github.io/ALayman/views/images/icon.png"
                 },
                 "headline": ele.title
