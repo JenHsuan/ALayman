@@ -114,6 +114,8 @@ function appendDevToChild(ele) {
 
     var card = document.createElement('div');
     card.className = 'card'
+    card.setAttribute('itemscope','');
+    card.setAttribute('itemtype', 'http://schema.org/Article');
 
     var img = document.createElement("img");
 
@@ -125,6 +127,7 @@ function appendDevToChild(ele) {
     var figure = document.createElement("figure");
     var figcaption = document.createElement("figcaption");
     figcaption.innerHTML = ele.link;
+    figcaption.setAttribute('itemprop', 'url');
     figure.appendChild(img);
     figure.appendChild(figcaption);
 
@@ -135,6 +138,7 @@ function appendDevToChild(ele) {
     cardTitle.className = 'card-title'
     //cardTitle.innerHTML = ele.title.match(new RegExp('.{1,80}', 'g'))[0] + "...";;
     cardTitle.innerHTML = ele.title;
+    cardTitle.setAttribute('itemprop', 'name');
 
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
@@ -143,7 +147,19 @@ function appendDevToChild(ele) {
 
     var name = document.createElement('li');
     name.className = 'card-subtitle';
-    name.innerHTML = 'Author: ' + ele.name;
+    name.innerHTML = 'Author: ' 
+    
+    var nameSpanParent = document.createElement('span');
+    nameSpanParent.setAttribute('itemscope','author');
+    nameSpanParent.setAttribute('itemtype', 'http://schema.org/Person');
+
+    var nameSpan = document.createElement('span');
+    nameSpan.className = 'card-subtitle';
+    nameSpan.innerHTML = ele.name;
+    name.setAttribute('itemprop', 'name');
+
+    nameSpanParent.appendChild(nameSpan);
+    name.appendChild(nameSpanParent);
 
     var tags = document.createElement('li');
     tags.className = 'card-subtitle';
@@ -151,7 +167,14 @@ function appendDevToChild(ele) {
 
     var time = document.createElement('li');
     time.className = 'card-subtitle'
-    time.innerHTML = 'Date: ' + ele.date;
+    time.innerHTML = 'Date: ';
+
+    var timeSpan = document.createElement('span');
+    timeSpan.className = 'card-subtitle';
+    timeSpan.innerHTML = ele.date;
+    timeSpan.setAttribute('itemprop', 'dataPublished');
+    timeSpan.setAttribute('content', ele.date);
+    time.appendChild(timeSpan)
 
     var btnDiv = document.createElement('div');
     btnDiv.className = 'col-md-12 col-xs-12 text-center'
