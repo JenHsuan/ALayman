@@ -300,7 +300,7 @@ function appendJsonLd(data){
                 "url": ele.link,
                 "image": ele.image,
                 "publisher": {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": ele.name
                 },
                 "headline": ele.title
@@ -328,7 +328,7 @@ function appendJsonLd(data){
                 "url": ele.url,
                 "image": ele.image,
                 "publisher": {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": ele.name
                 },
                 "headline": ele.title
