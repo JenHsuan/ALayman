@@ -105,6 +105,9 @@ function getData() {
             }
         });
     }
+
+    //append JSON-LD
+    appendJsonLd(data);
 }
 
 
@@ -275,3 +278,52 @@ function appendMediumChild(ele) {
 
     return div
 } 
+
+function appendJsonLd(data){
+    var el = document.createElement('script');
+    el.type = 'application/ld+json';
+
+    var devto = document.getElementById('devto')
+    if (devto !== undefined && devto !== null) {
+        list = []
+        data.forEach(ele => {
+            var t = { 
+                "@context": "http://schema.org",  
+                "@type": "Article", 
+                "name": ele.title,
+                "author": {
+                    "@type": "Person",
+                    "name": ele.name
+                },
+                "dataPublished": ele.date,
+                "url": ele.link
+            }
+            list.push(t)
+        });
+        el.text = JSON.stringify(list);
+        document.querySelector('head').appendChild(el);
+    }
+
+
+    var projects = document.getElementById('medium')
+    if (projects !== undefined && projects !== null) {
+        list = []
+        data.forEach(ele => {
+            var t = { 
+                "@context": "http://schema.org",  
+                "@type": "Article", 
+                "name": ele.title,
+                "author": {
+                    "@type": "Person",
+                    "name": ele.time
+                },
+                "dataPublished": ele.date,
+                "url": ele.url
+            }
+            list.push(t)
+        });
+        el.text = JSON.stringify(list);
+        document.querySelector('head').appendChild(el);
+    }
+
+}
