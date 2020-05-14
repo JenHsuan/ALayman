@@ -306,7 +306,10 @@ function appendJsonLd(data){
                 "publisher": {
                     "@type": "Organization",
                     "name": ele.name,
-                    "logo": "https://jenhsuan.github.io/ALayman/views/images/icon.png"
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://jenhsuan.github.io/ALayman/views/images/icon.png"
+                    }
                 },
                 "headline": ele.title
             }
@@ -339,7 +342,10 @@ function appendJsonLd(data){
                 "publisher": {
                     "@type": "Organization",
                     "name": ele.name,
-                    "logo": "https://jenhsuan.github.io/ALayman/views/images/icon.png"
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://jenhsuan.github.io/ALayman/views/images/icon.png"
+                    }
                 },
                 "headline": ele.title
             }
