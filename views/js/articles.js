@@ -297,7 +297,9 @@ function appendJsonLd(data){
                     "name": ele.name
                 },
                 "datePublished": ele.date,
-                "url": ele.link
+                "url": ele.link,
+                "image": ele.image,
+                "publisher": ele.name
             }
             list.push(t)
         });
@@ -316,10 +318,12 @@ function appendJsonLd(data){
                 "name": ele.title,
                 "author": {
                     "@type": "Person",
-                    "name": ele.time
+                    "name": ele.name
                 },
-                "datePublished": ele.date,
-                "url": ele.url
+                "datePublished": ele.time,
+                "url": ele.url,
+                "image": ele.image,
+                "publisher": ele.name
             }
             list.push(t)
         });
