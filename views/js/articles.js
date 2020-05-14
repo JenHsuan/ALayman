@@ -141,9 +141,9 @@ function appendDevToChild(ele) {
 
     var ul = document.createElement('ul');
 
-    var tags = document.createElement('li');
-    tags.className = 'card-subtitle';
-    tags.innerHTML = 'Author: ' + ele.name;
+    var name = document.createElement('li');
+    name.className = 'card-subtitle';
+    name.innerHTML = 'Author: ' + ele.name;
 
     var tags = document.createElement('li');
     tags.className = 'card-subtitle';
@@ -162,6 +162,7 @@ function appendDevToChild(ele) {
     a.href = ele.link
     btnDiv.appendChild(a)
 
+    ul.appendChild(name)
     ul.appendChild(tags)
     ul.appendChild(time)
     cardBlock.appendChild(ul)
