@@ -301,6 +301,7 @@ function appendJsonLd(data){
                     "name": ele.name
                 },
                 "datePublished": ele.date,
+                "dateModified": ele.date,
                 "url": ele.link,
                 "image": ele.image,
                 "publisher": {
@@ -337,6 +338,7 @@ function appendJsonLd(data){
                     "name": ele.name
                 },
                 "datePublished": ele.time,
+                "dateModified": ele.date,
                 "url": ele.url,
                 "image": ele.image,
                 "publisher": {
