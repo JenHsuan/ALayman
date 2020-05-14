@@ -143,6 +143,10 @@ function appendDevToChild(ele) {
 
     var tags = document.createElement('li');
     tags.className = 'card-subtitle';
+    tags.innerHTML = 'Author: ' + ele.name;
+
+    var tags = document.createElement('li');
+    tags.className = 'card-subtitle';
     tags.innerHTML = 'Tags: ' + ele.tags.join();
 
     var time = document.createElement('li');
