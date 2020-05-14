@@ -82,6 +82,8 @@ function getData() {
             dataType: "json",
             success: function(data) {
                 hideLoader();
+                //append JSON-LD
+                appendJsonLd(data);
                 data.forEach(ele => {
                     var div = appendMediumChild(ele);
                     projects.appendChild(div)
@@ -98,6 +100,8 @@ function getData() {
             dataType: "json",
             success: function(data) {
                 hideLoader();
+                //append JSON-LD
+                appendJsonLd(data);
                 data.forEach(ele => {
                     var div = appendDevToChild(ele);
                     devto.appendChild(div)
@@ -105,9 +109,6 @@ function getData() {
             }
         });
     }
-
-    //append JSON-LD
-    appendJsonLd(data);
 }
 
 
