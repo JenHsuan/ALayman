@@ -151,6 +151,11 @@ figcaption {
   background-color: #4A90E2;
   color: white; }
 
+.card-readtitle {
+  text-align: center;
+  font-size: 14px;
+  color: gray; }
+
 .card-block {
   margin-left: 3%;
   font-weight: 100;

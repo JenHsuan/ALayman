@@ -1,5 +1,8 @@
 //const API_BASE_URL = 'http://127.0.0.1:5000/';
 const API_BASE_URL = 'https://datacollector2020.herokuapp.com/';
+const ICON_URL = "https://jenhsuan.github.io/ALayman/views/images/icon.png";
+const ARTICLES_URL = "https://jenhsuan.github.io/ALayman/articles.html"
+const CODE_URL = "https://jenhsuan.github.io/ALayman/100DaysOfCode.html"
 var keyword=""
 
 window.onload = function() {
@@ -118,9 +121,7 @@ function appendDevToChild(ele) {
 
     var card = document.createElement('div');
     card.className = 'card'
-    card.setAttribute('itemscope','');
-    card.setAttribute('itemtype', 'http://schema.org/Article');
-
+    
     var img = document.createElement("img");
 
     img.className = "card-img-top"
@@ -131,7 +132,6 @@ function appendDevToChild(ele) {
     var figure = document.createElement("figure");
     var figcaption = document.createElement("figcaption");
     figcaption.innerHTML = ele.link;
-    figcaption.setAttribute('itemprop', 'url');
     figure.appendChild(img);
     figure.appendChild(figcaption);
 
@@ -142,8 +142,7 @@ function appendDevToChild(ele) {
     cardTitle.className = 'card-title'
     //cardTitle.innerHTML = ele.title.match(new RegExp('.{1,80}', 'g'))[0] + "...";;
     cardTitle.innerHTML = ele.title;
-    cardTitle.setAttribute('itemprop', 'name');
-
+    
     var cardBlock = document.createElement('div');
     cardBlock.className = 'card-block'
 
@@ -154,14 +153,11 @@ function appendDevToChild(ele) {
     name.innerHTML = 'Author: ' 
     
     var nameSpanParent = document.createElement('span');
-    nameSpanParent.setAttribute('itemscope','author');
-    nameSpanParent.setAttribute('itemtype', 'http://schema.org/Person');
-
+    
     var nameSpan = document.createElement('span');
     nameSpan.className = 'card-subtitle';
     nameSpan.innerHTML = ele.name;
-    name.setAttribute('itemprop', 'name');
-
+    
     nameSpanParent.appendChild(nameSpan);
     name.appendChild(nameSpanParent);
 
@@ -176,9 +172,11 @@ function appendDevToChild(ele) {
     var timeSpan = document.createElement('span');
     timeSpan.className = 'card-subtitle';
     timeSpan.innerHTML = ele.date;
-    timeSpan.setAttribute('itemprop', 'dataPublished');
-    timeSpan.setAttribute('content', ele.date);
     time.appendChild(timeSpan)
+
+    var readtime = document.createElement('div');
+    readtime.className = 'card-readtime';
+    readtime.innerHTML = ele.readtime;
 
     var btnDiv = document.createElement('div');
     btnDiv.className = 'col-md-12 col-xs-12 text-center'
@@ -193,6 +191,7 @@ function appendDevToChild(ele) {
     ul.appendChild(tags)
     ul.appendChild(time)
     cardBlock.appendChild(ul)
+    cardBlock.appendChild(readtime)
     cardBody.appendChild(cardTitle)
     cardBody.appendChild(cardBlock)
     cardBody.appendChild(btnDiv)
@@ -253,10 +252,16 @@ function appendMediumChild(ele) {
     time.className = 'card-subtitle'
     time.innerHTML = 'Date: ' + ele.time;
 
+
+    var readtime = document.createElement('div');
+    readtime.className = 'card-readtime';
+    readtime.innerHTML = ele.readtime;
+
     ul.appendChild(author)
     ul.appendChild(time)
     ul.appendChild(subTitle)
     cardBlock.appendChild(ul)
+    cardBlock.appendChild(readtime)
 
     var btnDiv = document.createElement('div');
     btnDiv.className = 'col-md-12 col-xs-12 text-center'
@@ -294,7 +299,7 @@ function appendJsonLd(data){
                 "name": ele.title,
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "https://jenhsuan.github.io/ALayman/articles.html"
+                    "@id": ARTICLES_URL
                  },
                 "author": {
                     "@type": "Person",
@@ -309,7 +314,7 @@ function appendJsonLd(data){
                     "name": ele.name,
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://jenhsuan.github.io/ALayman/views/images/icon.png"
+                        "url": ICON_URL
                     }
                 },
                 "headline": ele.title
@@ -331,7 +336,7 @@ function appendJsonLd(data){
                 "name": ele.title,
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "https://jenhsuan.github.io/ALayman/100DaysOfCode.html"
+                    "@id": CODE_URL
                  },
                 "author": {
                     "@type": "Person",
@@ -346,7 +351,7 @@ function appendJsonLd(data){
                     "name": ele.name,
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://jenhsuan.github.io/ALayman/views/images/icon.png"
+                        "url": ICON_URL
                     }
                 },
                 "headline": ele.title
