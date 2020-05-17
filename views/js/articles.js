@@ -87,7 +87,8 @@ function modifyKeywordsTag(data) {
         });
 
         var str = tags.join();
-        document.querySelector('meta[name="keywords"]').setAttribute("content", str);
+        console.log(str)
+        $('meta[name=keywords]').attr('content', str);
     }
 }
 
