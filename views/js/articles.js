@@ -76,6 +76,21 @@ function removeChilds(id) {
     }
 }
 
+function modifyKeywordsTag(data) {
+    var devto = document.getElementById('devto')
+    if (devto !== undefined && devto !== null) {
+        var tags = []
+        data.forEach(ele => {
+            ele.tags.forEach(tag => {
+                tags.push(tag);
+            });
+        });
+
+        var str = tags.join();
+        document.querySelector('meta[name="keywords"]').setAttribute("content", str);
+    }
+}
+
 function getData() {
     var projects = document.getElementById('medium')
     if (projects !== undefined && projects !== null) {
@@ -87,10 +102,12 @@ function getData() {
                 hideLoader();
                 //append JSON-LD
                 appendJsonLd(data);
+                //append articles
                 data.forEach(ele => {
                     var div = appendMediumChild(ele);
                     projects.appendChild(div)
                 });
+
             }
         });
     }
@@ -103,8 +120,11 @@ function getData() {
             dataType: "json",
             success: function(data) {
                 hideLoader();
+                //modify tags
+                modifyKeywordsTag(data);
                 //append JSON-LD
                 appendJsonLd(data);
+                //append articles
                 data.forEach(ele => {
                     var div = appendDevToChild(ele);
                     devto.appendChild(div)
