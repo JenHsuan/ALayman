@@ -265,11 +265,13 @@ function appendMediumChild(ele) {
 
     var subTitle = document.createElement('li');
     subTitle.className = 'card-subtitle';
+    /*
     if (ele.subtitle.match(/[\u3400-\u9FBF]/)) {
         subTitle.innerHTML = 'Introduction: ' + ele.subtitle.match(new RegExp('.{1,100}', 'g'))[0] + "...";
     } else {
         subTitle.innerHTML = 'Introduction: ' + ele.subtitle.match(new RegExp('.{1,130}', 'g'))[0] + "...";
-    }
+    }*/
+    subTitle.innerHTML = 'Introduction: ' + ele.subtitle;
 
     var author = document.createElement('li');
     author.className = 'card-subtitle';
