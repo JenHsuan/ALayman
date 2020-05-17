@@ -88,8 +88,13 @@ function modifyKeywordsTag(data) {
 
         var str = tags.join();
         console.log(str)
-        $('meta[name=keywords]').remove();
-        $('head').append( `<meta name="keywords" content="${str}">`);    
+        //$('meta[name=keywords]').remove();
+        //$('head').append( `<meta name="keywords" content="${str}">`);
+
+        var link = document.createElement('meta');
+        link.setAttribute('name', 'keywords');
+        link.content = str;
+        document.getElementsByTagName('head')[0].appendChild(link);
     }
 }
 
