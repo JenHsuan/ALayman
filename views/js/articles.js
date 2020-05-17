@@ -271,7 +271,7 @@ function appendMediumChild(ele) {
     } else {
         subTitle.innerHTML = 'Introduction: ' + ele.subtitle.match(new RegExp('.{1,130}', 'g'))[0] + "...";
     }*/
-    subTitle.innerHTML = 'Introduction: ' + ele.subtitle;
+    subTitle.innerHTML = 'Introduction: ' + ele.subtitle + "...";
 
     var author = document.createElement('li');
     author.className = 'card-subtitle';
