@@ -94,7 +94,7 @@ function modifyKeywordsTag(data) {
         var link = document.createElement('meta');
         link.setAttribute('name', 'keywords');
         link.content = str;
-        document.getElementsByTagName('head')[0].appendChild(link);
+        document.querySelector('head').appendChild(link);
     }
 }
 
