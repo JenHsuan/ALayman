@@ -9,7 +9,7 @@
     <meta property="og:image" content="views/images/articlescover.png">
     <meta property="og:description" content="The page sharing the information about programming languages, algorithm, databases, devops and software testing." >
     <title itemprop='name'>New Technologies Studies - Jen-Hsuan Hsieh (Sean Hsieh)</title>
-    <link rel="canonical" href="https://jenhsuan.github.io/ALayman/articles.html" itemprop="url">
+    <link rel="canonical" href="https://jenhsuan.github.io/ALayman/articles.html">
     <meta name="description" content="Software Development, Tesing, DveOps, SRE, Inteviews, Data Sciences">
     <meta name="keywords" content="Software Development, Tesing, DveOps, SRE, Inteviews, Data Sciences">
     <meta name="author" content="Jen-Hsuan Hsieh (Sean Hsieh)">
@@ -18,11 +18,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/common.css">
     <link rel="stylesheet" href="views/css/articles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="views/js/articles.js" ></script>
+    <link rel="dns-fetch" href="https://cdn-images-1.medium.com/">
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" as="script">
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" as="script">
+    <link rel="preload" href="views/js/articles.js" as="script">
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="views/js/articles.js" defer></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
