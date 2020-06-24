@@ -50,6 +50,13 @@
   font-size: 16px;
   font-weight: 500; }
 
+.daily-learning-action {
+  margin-left: 40%; }
+  .daily-learning-action #logo {
+    margin-left: 5%;
+    width: 20%;
+    border-radius: 5px; }
+
 .des {
   font-size: 10px; }
 
@@ -145,7 +152,7 @@ figcaption {
 #medium #loader, #devto #loader {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 60%;
+  top: 70%;
   left: 50%; }
   #medium #loader img, #devto #loader img {
     min-width: 5%; }

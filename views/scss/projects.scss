@@ -17,6 +17,14 @@ $page-title-font-weight: 400;
     }
 } 
 
+.daily-learning-action {
+    margin-left: 40%;
+    #logo {
+        margin-left: 5%;
+        width: 20%;
+        border-radius: 5px;
+    }
+}
 .des{
     font-size: 10px;
 }
@@ -132,7 +140,7 @@ figcaption {
     #loader {
         position: absolute;   
         transform:translate(-50%,-50%);  
-        top: 60%;
+        top: 70%;
         left: 50%;
         img {
             min-width: 5%;
