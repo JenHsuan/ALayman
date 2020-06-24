@@ -85,7 +85,12 @@
   width: 8%; }
 
 .articles-author-logo {
-  margin-left: 45%; }
+  margin-top: 5%;
+  margin-left: 35%; }
+  .articles-author-logo #logo {
+    margin-left: 5%;
+    width: 20%;
+    border-radius: 5px; }
 
 #search {
   margin-left: 2%;
