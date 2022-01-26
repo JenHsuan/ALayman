@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>iPad Pro Portrait Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="60.8026756" cy="60.6040268" rx="59.1973244" ry="59.3959732"></ellipse>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPad-Pro-Portrait-Copy">
+            <g id="Group" transform="translate(3.000000, 2.000000)">
+                <g id="Oval-198">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#000000" stroke-width="3" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M89.568674,10.8271614 C80.2586181,4.01786955 68.7909316,0 56.3879599,0 C25.2457496,0 0,25.3304668 0,56.5771812 C0,68.557138 3.71099235,79.6674375 10.0424971,88.8139405 C14.0792633,87.5362109 18.9653899,84.2801871 24.9651781,83.0871638 C26.5580797,82.7704245 34.7383104,81.3298522 42.6000499,83.0871638 C53.8432263,85.6003182 59.3203345,93.4781067 69.5286726,97.1799818 C79.7370107,100.881857 79.2951811,93.4208834 79.7370107,92.3156331 C80.4828815,90.4498146 79.923879,87.6500944 79.7370107,85.6003182 C79.3419799,81.2671868 78.4326605,78.007471 79.7370107,78.007471 C83.4934576,78.007471 84.7183368,77.4661282 85.3254491,75.9342832 C85.6146685,75.2045347 83.2215177,71.0130091 83.4934535,70.2699657 C84.2159015,68.2959327 88.4260321,68.7471851 88.9415089,66.6287825 C89.3575101,64.9191846 89.5677174,59.8034414 88.9415089,58.5231481 C89.5871275,55.0719366 100.841974,56.3493861 100.841974,52.6866518 C100.841974,51.0563664 100.142047,49.0057553 97.5679807,47.0827191 C96.607373,46.3650672 95.4775266,45.1177649 94.7081722,44.3204598 C93.7979842,43.3772047 86.5669455,31.0282479 86.8961321,21.8596808 C87.0433453,17.7594715 88.1927116,14.0157726 89.568674,10.8271614 Z" id="Combined-Shape" stroke="#000000" stroke-width="3" fill="#4A4A4A"></path>
+            </g>
+            <text id="A-Layman-" font-family="BradleyHandITCTT-Bold, Bradley Hand" font-size="14" font-style="expanded" font-weight="bold" fill="#333333">
+                <tspan x="30" y="107">A-Layman </tspan>
+            </text>
+        </g>
+    </g>
+</svg>
