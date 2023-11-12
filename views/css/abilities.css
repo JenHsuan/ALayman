@@ -1,62 +1,76 @@
 #page {
   padding-left: 10%;
-  padding-right: 10%; }
-  #page h2 {
-    font-size: 70px;
-    color: #4A90E2;
-    font-weight: 300; }
-  #page > .title {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-left: 0;
-    text-align: center;
-    min-width: 220px;
-    font-weight: 400; }
-    #page > .title > .subtitle {
-      color: #4A90E2;
-      font-size: 20px;
-      font-weight: 300; }
+  padding-right: 10%;
+}
+#page h2 {
+  font-size: 70px;
+  color: #4A90E2;
+  font-weight: 300;
+}
+#page > .title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 0;
+  min-width: 220px;
+  font-weight: 400;
+}
+#page > .title > .subtitle {
+  color: #4A90E2;
+  font-size: 20px;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 750px) {
   #float-navbar {
-    display: none; }
-
+    display: none;
+  }
   .mobile-navbar {
-    display: block; }
-
+    display: block;
+  }
   #common-footer #follow {
-    display: none; }
+    display: none;
+  }
   #common-footer #copyright {
     margin: 0 auto;
-    float: none; }
-
+    float: none;
+  }
   #page h2 {
-    font-size: 42px; }
+    font-size: 42px;
+  }
   #page > .title > .subtitle {
     font-size: 18px;
     margin-left: 2%;
-    margin-right: 2%; } }
+    margin-right: 2%;
+  }
+}
 .section .item {
   margin-bottom: 5%;
-  margin-top: 5%; }
-  .section .item .subitem {
-    margin-top: 2%; }
-  .section .item .title {
-    font-size: 32px;
-    color: #4A90E2;
-    font-weight: 200; }
+  margin-top: 5%;
+}
+.section .item .subitem {
+  margin-top: 2%;
+}
+.section .item .title {
+  font-size: 32px;
+  color: #4A90E2;
+  font-weight: 200;
+}
 
 .section .item .content {
   font-weight: 300;
   font-size: 16px;
-  margin-top: 3%; }
-  .section .item .content .highlight {
-    font-style: italic; }
+  margin-top: 3%;
+}
+.section .item .content .highlight {
+  font-style: italic;
+}
 
 .section .item .content {
-  margin-top: 1%; }
+  margin-top: 1%;
+}
 
 .glyphicon-star {
-  color: #4A90E2; }
+  color: #4A90E2;
+}
 
 /*# sourceMappingURL=abilities.css.map */

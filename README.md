@@ -12,11 +12,18 @@ Web Programming with Python and JavaScript
 * The libraries I used includes the following items.
 1. Bootstrap
 * The concepts I used in my stlesheets includes the following items.
-1. Sass:
+2. Sass:
 - variables
 - inheritance
 - module
 - nesting
-2. CSS:
+3. CSS:
 - Media queries for changed screen
 - selectors: Multiple element selector, Descendant selector, Immediate child selector, Pseudo classes selector, Pseudo element selector
+
+## Usages
+* scss
+```
+npm install -g sass
+sass --watch views/scss:views/css
+```

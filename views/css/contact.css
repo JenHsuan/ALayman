@@ -1,50 +1,60 @@
 #page {
   padding-left: 10%;
-  padding-right: 10%; }
-  #page h2 {
-    font-size: 70px;
-    color: #4A90E2;
-    font-weight: 300; }
-  #page > .title {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-left: 0;
-    text-align: center;
-    min-width: 220px;
-    font-weight: 400; }
-    #page > .title > .subtitle {
-      color: #4A90E2;
-      font-size: 20px;
-      font-weight: 300; }
+  padding-right: 10%;
+}
+#page h2 {
+  font-size: 70px;
+  color: #4A90E2;
+  font-weight: 300;
+}
+#page > .title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 0;
+  min-width: 220px;
+  font-weight: 400;
+}
+#page > .title > .subtitle {
+  color: #4A90E2;
+  font-size: 20px;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 750px) {
   #float-navbar {
-    display: none; }
-
+    display: none;
+  }
   .mobile-navbar {
-    display: block; }
-
+    display: block;
+  }
   #common-footer #follow {
-    display: none; }
+    display: none;
+  }
   #common-footer #copyright {
     margin: 0 auto;
-    float: none; }
-
+    float: none;
+  }
   #page h2 {
-    font-size: 42px; }
+    font-size: 42px;
+  }
   #page > .title > .subtitle {
     font-size: 18px;
     margin-left: 2%;
-    margin-right: 2%; } }
+    margin-right: 2%;
+  }
+}
 .section .item {
   margin-bottom: 5%;
-  margin-top: 5%; }
-  .section .item .subitem {
-    margin-top: 2%; }
-  .section .item .title {
-    font-size: 32px;
-    color: #4A90E2;
-    font-weight: 200; }
+  margin-top: 5%;
+}
+.section .item .subitem {
+  margin-top: 2%;
+}
+.section .item .title {
+  font-size: 32px;
+  color: #4A90E2;
+  font-weight: 200;
+}
 
 body {
   background-image: url("../images/alaymancover.png");
@@ -54,34 +64,42 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .main {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 50%; }
-  .main .name {
-    font-weight: 300;
-    font-size: 72px;
-    color: white; }
-  .main .resume {
-    font-weight: 300;
-    text-align: center;
-    font-size: 28px;
-    color: white; }
+  left: 50%;
+}
+.main .name {
+  font-weight: 300;
+  font-size: 72px;
+  color: white;
+}
+.main .resume {
+  font-weight: 300;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
 
 #float-navbar {
-  opacity: 100%; }
+  opacity: 100%;
+}
 
 @media screen and (max-width: 750px) {
   .main .name {
     font-weight: 300;
-    font-size: 24px; }
+    font-size: 24px;
+  }
   .main .resume {
-    font-size: 18px; }
-
+    font-size: 18px;
+  }
   body {
-    background-image: url("../images/alaymancover-mobile.png"); } }
+    background-image: url("../images/alaymancover-mobile.png");
+  }
+}
 
 /*# sourceMappingURL=contact.css.map */

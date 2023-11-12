@@ -1,82 +1,101 @@
 #page {
   padding-left: 10%;
-  padding-right: 10%; }
-  #page h2 {
-    font-size: 70px;
-    color: #4A90E2;
-    font-weight: 300; }
-  #page > .title {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-left: 0;
-    text-align: center;
-    min-width: 220px;
-    font-weight: 400; }
-    #page > .title > .subtitle {
-      color: #4A90E2;
-      font-size: 20px;
-      font-weight: 300; }
+  padding-right: 10%;
+}
+#page h2 {
+  font-size: 70px;
+  color: #4A90E2;
+  font-weight: 300;
+}
+#page > .title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 0;
+  min-width: 220px;
+  font-weight: 400;
+}
+#page > .title > .subtitle {
+  color: #4A90E2;
+  font-size: 20px;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 750px) {
   #float-navbar {
-    display: none; }
-
+    display: none;
+  }
   .mobile-navbar {
-    display: block; }
-
+    display: block;
+  }
   #common-footer #follow {
-    display: none; }
+    display: none;
+  }
   #common-footer #copyright {
     margin: 0 auto;
-    float: none; }
-
+    float: none;
+  }
   #page h2 {
-    font-size: 42px; }
+    font-size: 42px;
+  }
   #page > .title > .subtitle {
     font-size: 18px;
     margin-left: 2%;
-    margin-right: 2%; } }
+    margin-right: 2%;
+  }
+}
 .section .item {
   margin-bottom: 5%;
-  margin-top: 5%; }
-  .section .item .subitem {
-    margin-top: 2%; }
-  .section .item .title {
-    font-size: 32px;
-    color: #4A90E2;
-    font-weight: 200; }
+  margin-top: 5%;
+}
+.section .item .subitem {
+  margin-top: 2%;
+}
+.section .item .title {
+  font-size: 32px;
+  color: #4A90E2;
+  font-weight: 200;
+}
 
-.section .item .content, .section .item .description {
+.section .item .description, .section .item .content {
   font-weight: 300;
   font-size: 16px;
-  margin-top: 3%; }
-  .section .item .content .highlight, .section .item .description .highlight {
-    font-style: italic; }
+  margin-top: 3%;
+}
+.section .item .description .highlight, .section .item .content .highlight {
+  font-style: italic;
+}
 
-.section .item .subtitle, .section .item .subject {
+.section .item .subject, .section .item .subtitle {
   font-size: 18px;
   color: black;
   font-weight: bold;
-  margin-bottom: 1%; }
+  margin-bottom: 1%;
+}
 
 .section .item .description .location {
   font-style: italic;
-  font-weight: 500; }
+  font-weight: 500;
+}
 .section .item img {
   width: 100px;
-  margin-top: 7px; }
+  margin-top: 7px;
+}
 
 #careers img, #certifications img {
   width: 100px;
-  margin-top: 2%; }
+  margin-top: 2%;
+}
 
 @media screen and (max-width: 750px) {
   .section .item .description {
-    display: none; }
+    display: none;
+  }
   .section .item .subject {
     font-size: 16px;
     color: black;
     font-weight: 300;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%;
+  }
+}
 
 /*# sourceMappingURL=experiences.css.map */
