@@ -130,5 +130,24 @@
     visibility: hidden;
   }
 }
+@media screen and (min-width: 1800px) {
+  .section .item .subitem {
+    min-height: 8em;
+  }
+  .section .item .description {
+    visibility: hidden;
+    display: none;
+  }
+  .section .item .subject {
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 5%;
+  }
+  .mobile-hidden {
+    display: none;
+    visibility: hidden;
+  }
+}
 
 /*# sourceMappingURL=experiences.css.map */
