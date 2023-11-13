@@ -29,7 +29,6 @@ $subtitle-margin-mobile: 2%;
             }
         }
         img {
-            width: 100px;
             margin-top: 7px;
         }
     }
@@ -42,12 +41,40 @@ $subtitle-margin-mobile: 2%;
     }
 }
 
+.circle-container {
+  display: flex;
+  justify-content: center;
+  .goal-circle {
+    margin-top: 1em;
+    width: .7em;
+    height: .7em;
+    background-color: #cecece;
+    border-radius: 3em;
+  }
+}
 
-@media screen and (max-width: 750px){
+.icon-container{
+  width: 70px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2.8em;
+    top: 2em;
+    height: 1.7em;
+    height: calc(100%);
+    border-left: 1px dotted #cecece;
+  }
+}
+
+@media screen and (max-width: 1200px){
     .section {
         .item {
+          .subitem {
+            min-height: 8em;
+          }
             .description {
-                display: none;
+              visibility: hidden;
+              display: none;
             }
             .subject {
                 font-size: 16px;
@@ -57,4 +84,9 @@ $subtitle-margin-mobile: 2%;
             }
         }
     }
+
+  .mobile-hidden {
+    display: none;
+    visibility: hidden;
+  }
 }

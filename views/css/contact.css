@@ -49,6 +49,7 @@
 }
 .section .item .subitem {
   margin-top: 2%;
+  min-height: 18em;
 }
 .section .item .title {
   font-size: 32px;
