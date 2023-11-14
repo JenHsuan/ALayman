@@ -92,45 +92,22 @@
 }
 .circle-container .goal-circle {
   margin-top: 1em;
-  width: 0.7em;
-  height: 0.7em;
+  width: 0.6em;
+  height: 0.6em;
   background-color: #cecece;
   border-radius: 3em;
 }
-
-.icon-container {
-  width: 70px;
-}
-.icon-container::before {
+.circle-container .goal-circle::before {
   content: "";
-  position: absolute;
-  left: -2.8em;
-  top: 2em;
-  height: 1.7em;
-  height: 100%;
+  position: relative;
+  display: block;
+  left: 0.3em;
+  top: 1em;
   border-left: 1px dotted #cecece;
+  min-height: 18em;
 }
 
 @media screen and (max-width: 1200px) {
-  .section .item .subitem {
-    min-height: 8em;
-  }
-  .section .item .description {
-    visibility: hidden;
-    display: none;
-  }
-  .section .item .subject {
-    font-size: 16px;
-    color: black;
-    font-weight: 300;
-    margin-bottom: 5%;
-  }
-  .mobile-hidden {
-    display: none;
-    visibility: hidden;
-  }
-}
-@media screen and (min-width: 1800px) {
   .section .item .subitem {
     min-height: 8em;
   }
