@@ -1,3 +1,7 @@
+.one-page-item {
+  margin-bottom: 8em;
+}
+
 #page {
   padding-left: 0;
   padding-right: 0;
@@ -7,14 +11,12 @@
   color: #4A90E2;
   font-weight: 300;
 }
-#page > .title {
-  padding-top: 80px;
-  padding-bottom: 80px;
+#page .title {
   margin-left: 0;
   min-width: 220px;
   font-weight: 400;
 }
-#page > .title > .subtitle {
+#page .title .subtitle {
   color: #4A90E2;
   font-size: 20px;
   font-weight: 300;
@@ -37,7 +39,7 @@
   #page h2 {
     font-size: 42px;
   }
-  #page > .title > .subtitle {
+  #page .title .subtitle {
     font-size: 18px;
     margin-left: 2%;
     margin-right: 2%;

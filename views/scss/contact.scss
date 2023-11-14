@@ -36,6 +36,9 @@ body {
       text-align: center;
       font-size: 28px;
       color: white;
+      &:hover {
+        font-weight: 600;
+      }
   }
 }
 
@@ -51,6 +54,9 @@ body {
         }
         .resume {
             font-size: 18px;
+            &:hover {
+              font-weight: 600;
+            }
         }
     }
     body {

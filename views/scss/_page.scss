@@ -1,3 +1,7 @@
+.one-page-item {
+  margin-bottom: 8em;
+}
+
 #page {
     padding-left: $page-padding;
     padding-right: $page-padding;
@@ -6,13 +10,11 @@
         color: $page-title-font-color;
         font-weight: 300;
     }
-    > .title {
-        padding-top: $page-title-margin;
-        padding-bottom: $page-title-margin;
+    .title {
         margin-left: 0;
         min-width:220px; 
         font-weight: $page-title-font-weight;
-        > .subtitle {
+        .subtitle {
             color: $page-title-font-color;
             font-size: $page-subtitle-font-size;
             font-weight: 300;
@@ -40,8 +42,8 @@
         h2 {
             font-size: $page-title-font-size-mobile;
         }
-        > .title {
-            > .subtitle {
+        .title {
+            .subtitle {
                 font-size: $page-subtitle-font-size-mobile;
                 margin-left: $subtitle-margin-mobile;
                 margin-right: $subtitle-margin-mobile;
