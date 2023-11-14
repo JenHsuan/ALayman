@@ -99,7 +99,7 @@
   background-color: #cecece;
   border-radius: 3em;
 }
-.circle-container .goal-circle::before {
+.circle-container .goal-circle:not(.final-circle)::before {
   content: "";
   position: relative;
   display: block;

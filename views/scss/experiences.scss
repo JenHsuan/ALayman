@@ -50,7 +50,7 @@ $subtitle-margin-mobile: 2%;
     height: .6em;
     background-color: #cecece;
     border-radius: 3em;
-    &::before {
+    &:not(.final-circle)::before {
       content: '';
       position: relative;
       display: block;
