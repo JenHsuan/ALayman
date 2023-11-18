@@ -1,4 +1,4 @@
-$page-padding: 10%;
+$page-padding: 20%;
 $page-subtitle-font-size: 20px;
 $page-title-margin: 80px;
 $page-title-font-size: 70px;
@@ -43,7 +43,7 @@ $subtitle-margin-mobile: 2%;
 }
 
 #contact {
-    display: none;
+    display: block;
     .link {
         margin-top: 3%;
         margin-bottom: 3%;

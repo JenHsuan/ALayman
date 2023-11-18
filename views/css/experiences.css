@@ -1,10 +1,10 @@
 .one-page-item {
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 
 #page {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 #page h2 {
   font-size: 70px;
@@ -75,34 +75,60 @@
   margin-bottom: 1%;
 }
 
+.background-white {
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  height: 100vh;
+}
+
 .background-alayman {
   position: relative;
+  height: 100%;
+  top: 0;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
 .background-alayman img {
-  width: 100%;
+  position: absolute;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
   filter: brightness(0.9) contrast(1.2);
 }
 .background-alayman .name {
-  font-weight: 300;
-  font-size: 72px;
+  font-weight: 500;
+  font-size: 90px;
   width: 8em;
   color: white;
   position: absolute;
   top: 40%;
   left: calc(50% - 4em);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .background-alayman .resume {
   font-weight: 300;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   position: absolute;
   color: white;
   top: calc(40% + 6em);
   width: 20em;
   left: calc(50% - 10em);
   text-align: center;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.container {
+  background-color: #fff;
+  margin: 0;
+  width: 100%;
 }
 
 .section .item .description .location {
