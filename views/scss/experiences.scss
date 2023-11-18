@@ -66,6 +66,27 @@ $subtitle-margin-mobile: 2%;
   width: 100%;
 }
 
+#abilities {
+  display: flex;
+  .diagram {
+    margin-top: 20px;
+    border: 1px solid #cecece;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    width: 40%;
+    margin-left: 1em;
+    .title {
+      text-align: end;
+    }
+    .subtitle {
+      text-align: end;
+    }
+  }
+}
+
 .section {
     .item {
         .subtitle {
@@ -140,5 +161,27 @@ $subtitle-margin-mobile: 2%;
   .mobile-hidden {
     display: none;
     visibility: hidden;
+  }
+
+  #abilities {
+    display: block;
+    .diagram {
+      display: none;
+      visibility: hidden;
+      margin-top: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      width: 100%;
+      margin-left: 0;
+      .title {
+        text-align: start;
+      }
+      .subtitle {
+        text-align: start;
+      }
+    }
   }
 }

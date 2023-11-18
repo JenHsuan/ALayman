@@ -41,7 +41,6 @@
   }
   #page .title .subtitle {
     font-size: 18px;
-    margin-left: 2%;
     margin-right: 2%;
   }
 }
@@ -131,6 +130,27 @@
   width: 100%;
 }
 
+#abilities {
+  display: flex;
+}
+#abilities .diagram {
+  margin-top: 20px;
+  border: 1px solid #cecece;
+}
+#abilities .diagram img {
+  width: 100%;
+}
+#abilities .content {
+  width: 40%;
+  margin-left: 1em;
+}
+#abilities .content .title {
+  text-align: end;
+}
+#abilities .content .subtitle {
+  text-align: end;
+}
+
 .section .item .description .location {
   font-style: italic;
   font-weight: 500;
@@ -182,6 +202,27 @@
   .mobile-hidden {
     display: none;
     visibility: hidden;
+  }
+  #abilities {
+    display: block;
+  }
+  #abilities .diagram {
+    display: none;
+    visibility: hidden;
+    margin-top: 20px;
+  }
+  #abilities .diagram img {
+    width: 100%;
+  }
+  #abilities .content {
+    width: 100%;
+    margin-left: 0;
+  }
+  #abilities .content .title {
+    text-align: start;
+  }
+  #abilities .content .subtitle {
+    text-align: start;
   }
 }
 
