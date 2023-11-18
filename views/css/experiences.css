@@ -1,10 +1,11 @@
 .one-page-item {
-  margin-bottom: 8em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 #page {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 #page h2 {
   font-size: 70px;
@@ -18,7 +19,7 @@
 }
 #page .title .subtitle {
   color: #4A90E2;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -136,14 +137,13 @@
 }
 #abilities .diagram {
   border: 1px solid #cecece;
-  box-shadow: 0 1px 3px gray, 0 0 0 3px #768fea;
 }
 #abilities .diagram img {
   width: 100%;
 }
 #abilities .content {
   width: 40%;
-  margin-left: 1.5em;
+  margin-left: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
   background-color: #394a89;
