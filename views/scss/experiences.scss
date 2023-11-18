@@ -68,21 +68,42 @@ $subtitle-margin-mobile: 2%;
 
 #abilities {
   display: flex;
+  padding: 2.5em 0;
   .diagram {
-    margin-top: 20px;
     border: 1px solid #cecece;
+    box-shadow: 0 1px 3px gray, 0 0 0 3px #768fea;
     img {
       width: 100%;
     }
   }
   .content {
     width: 40%;
-    margin-left: 1em;
-    .title {
-      text-align: end;
+    margin-left: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #394a89;
+    border-radius: .2em;
+    .title h2{
+      color: #fff;
+      margin-bottom: 0;
     }
     .subtitle {
-      text-align: end;
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#contact {
+  background-color: #394a89;
+  border-radius: .2em;
+  padding: 2.5em .8em;
+  .title {
+    & h2{
+      color: #fff;
+    }
+    .subtitle {
+      color: #fff;
     }
   }
 }

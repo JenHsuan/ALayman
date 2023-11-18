@@ -132,23 +132,42 @@
 
 #abilities {
   display: flex;
+  padding: 2.5em 0;
 }
 #abilities .diagram {
-  margin-top: 20px;
   border: 1px solid #cecece;
+  box-shadow: 0 1px 3px gray, 0 0 0 3px #768fea;
 }
 #abilities .diagram img {
   width: 100%;
 }
 #abilities .content {
   width: 40%;
-  margin-left: 1em;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #394a89;
+  border-radius: 0.2em;
 }
-#abilities .content .title {
-  text-align: end;
+#abilities .content .title h2 {
+  color: #fff;
+  margin-bottom: 0;
 }
 #abilities .content .subtitle {
-  text-align: end;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#contact {
+  background-color: #394a89;
+  border-radius: 0.2em;
+  padding: 2.5em 0.8em;
+}
+#contact .title h2 {
+  color: #fff;
+}
+#contact .title .subtitle {
+  color: #fff;
 }
 
 .section .item .description .location {
