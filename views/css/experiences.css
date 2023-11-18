@@ -161,13 +161,75 @@
 #contact {
   background-color: #394a89;
   border-radius: 0.2em;
-  padding: 2.5em 0.8em;
 }
 #contact .title h2 {
   color: #fff;
 }
 #contact .title .subtitle {
   color: #fff;
+}
+
+#portfolios {
+  display: flex;
+  padding: 2.5em 0;
+}
+#portfolios .diagram {
+  width: calc(60% - 0.5em);
+}
+#portfolios .diagram .wrap .row {
+  display: flex;
+  margin: 0;
+}
+#portfolios .diagram .wrap .row .item {
+  width: 30%;
+  margin: 1%;
+  border: 1px solid #cecece;
+  position: relative;
+}
+#portfolios .diagram .wrap .row .item img {
+  width: 100%;
+}
+#portfolios .diagram .wrap .row .item .txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  /* opacity: 0; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: scale(0);
+}
+#portfolios .diagram .wrap .row .item:hover .txt {
+  opacity: 1;
+  transform: scale(1);
+}
+#portfolios .content {
+  width: 40%;
+  margin-right: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #394a89;
+  border-radius: 0.2em;
+}
+#portfolios .content .title h2 {
+  color: #fff;
+  margin-bottom: 0;
+}
+#portfolios .content .subtitle {
+  color: #fff;
+  margin-bottom: 0;
+}
+#portfolios .content .items {
+  width: 30%;
 }
 
 .section .item .description .location {
@@ -241,6 +303,23 @@
     text-align: start;
   }
   #abilities .content .subtitle {
+    text-align: start;
+  }
+  #portfolios {
+    display: block;
+  }
+  #portfolios .diagram {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #portfolios .content {
+    width: 100%;
+    margin-left: 0;
+  }
+  #portfolios .content .title {
+    text-align: start;
+  }
+  #portfolios .content .subtitle {
     text-align: start;
   }
 }
