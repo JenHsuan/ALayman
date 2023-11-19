@@ -137,15 +137,24 @@
 }
 #abilities .diagram {
   border: 1px solid #cecece;
+  width: calc(65% - 0.5em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#abilities .diagram .subtitle {
+  color: #4A90E2;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
 }
 #abilities .diagram img {
   width: 100%;
 }
 #abilities .content {
-  width: 40%;
+  width: 35%;
   margin-left: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
   background-color: #394a89;
   border-radius: 0.2em;
 }
@@ -156,6 +165,16 @@
 #abilities .content .subtitle {
   color: #fff;
   margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+#abilities .content .section {
+  color: #fff;
+  font-size: 18px;
+}
+#abilities .content .section li {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 #contact {

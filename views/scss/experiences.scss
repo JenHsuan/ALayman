@@ -71,15 +71,24 @@ $subtitle-margin-mobile: 2%;
   padding: 2.5em 0;
   .diagram {
     border: 1px solid #cecece;
+    width: calc(65% - .5em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .subtitle {
+      color: $page-title-font-color;
+      font-size: $page-subtitle-font-size;
+      font-weight: 300;
+      text-align: center;
+    }
     img {
       width: 100%;
     }
   }
   .content {
-    width: 40%;
+    width: 35%;
     margin-left: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     background-color: #394a89;
     border-radius: .2em;
     .title h2{
@@ -89,6 +98,16 @@ $subtitle-margin-mobile: 2%;
     .subtitle {
       color: #fff;
       margin-bottom: 0;
+      font-size: $page-subtitle-font-size;
+      font-weight: 300;
+    }
+    .section {
+      color: #fff;
+      font-size: 18px;
+      li {
+        font-size: $page-subtitle-font-size;
+        font-weight: 300;
+      }
     }
   }
 }
